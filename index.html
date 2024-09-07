@@ -9,113 +9,120 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-        <style>
-            .container {
-                max-width: 1200px;
-                margin: 40px;
-                padding: 20px; 
-                background-color: #fff;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                border-radius: 10px;
-                font-family: "Roboto", sans-serif;
-            }
-            
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        </style>
+        <link href="style.css" rel="stylesheet">  
     </head>
 
-    <body style="background-color: #595555;">
+    <body>
         <div class="container">
-            <div style="text-align: center; padding: 20px;">
-                <!--imagen del estudiante -->
-                <img src="imgs/eren2.avif"
-                alt="Foto del estudiante" width="150" height="150" style="border-radius: 50%;" >
-
-                <!--NOMBRE Y ESPECIALIDAD -->
-                <h1 style="margin: 10px 0; font-size: 2.5em; color: #929292;">PEREZ</h1>
-                <h2 style="color: #ffb71a; margin-bottom: 0;">JUAN CARLOS</h2>
-                <p style="font-size: 1.2em; color: #929292;">Web Developer & Front-end Expert</p>
-                
-            </div>
-            <!-- INFORMACION DE CONTACTO-->
-            <div style="display: flex; justify-content: center; padding: 10px; background-color: #ffb71a; gap: 20px;">
-                <p><strong>Ubicación:</strong> Bogota DC</p>
-                <p><strong>Teléfono:</strong>  +57 365588992</p>
-                <p><strong>Website:</strong> www.estudiantes.com</p>
-                <p><strong>Email:</strong> Correo@estudiantes.com</p>
+            <div class="header-container">
+                <div class="header">
+                    <div class="card">
+                        <div class="profile-img-container">
+                            <!--imagen del estudiante -->
+                            <img src="imgs/eren2.avif"
+                            alt="Foto del estudiante" class="profile-img" >
+                        </div>
+                        <div class="profile-information">
+                            <!--NOMBRE Y ESPECIALIDAD -->
+                            <h1 class="name">PEREZ</h1>
+                            <h2 class="last-name">JUAN CARLOS</h2>
+                            <p class="profession">Web Developer & Front-end Expert</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- INFORMACION DE CONTACTO-->
+                <div class="contact-info">
+                    <p><strong>Ubicación:</strong> Bogota DC</p>
+                    <p><strong>Teléfono:</strong>  +57 365588992</p>
+                    <p><strong>Website:</strong> www.estudiantes.com</p>
+                    <p><strong>Email:</strong> Correo@estudiantes.com</p>
+                </div>
             </div>
             <!-- descripcion personal-->
             <hr>
-            <section style="padding: 20px;">
-                <h2 style="color:#ffb71a; text-align: center;">Descripción Personal</h2>
-                <p style="font-size: 1.1em; color:#757474; line-height: 1.6; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis nisi quo animi labore consectetur molestias excepturi voluptatibus, facilis nihil. Enim, corporis consequuntur deserunt at officiis placeat magni reprehenderit commodi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem voluptate, repellendus tenetur expedita ex aliquid voluptas ad asperiores assumenda sint nesciunt reprehenderit quia debitis sit adipisci explicabo doloremque vero eum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laudantium culpa iure aspernatur, vel molestiae quod? Omnis tenetur voluptates rem ipsam odit atque quaerat dicta? Magni, consequatur. Cum, eum maxime!</p>
+            <section class="personal-description" >
+                <h2>Descripción Personal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis nisi quo animi labore consectetur molestias excepturi voluptatibus, facilis nihil. Enim, corporis consequuntur deserunt at officiis placeat magni reprehenderit commodi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem voluptate, repellendus tenetur expedita ex aliquid voluptas ad asperiores assumenda sint nesciunt reprehenderit quia debitis sit adipisci explicabo doloremque vero eum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus laudantium culpa iure aspernatur, vel molestiae quod? Omnis tenetur voluptates rem ipsam odit atque quaerat dicta? Magni, consequatur. Cum, eum maxime!</p>
             </section>
-            <section style="padding: 20px;">
-                <h2 style="color:#ffb71a; text-align: center;">Experiencia Laboral</h2>
-                <table style="width: 100; border-collapse: collapse;">
-                    <tr style="border-bottom: 1px solid #929292;">
-                        <td style="width: 30%; padding: 10px; vertical-align: top;">
+            <section class="work-experience">
+                <h2>Experiencia Laboral</h2>
+                <table class="experience-table">
+                    <tr>
+                        <td style="width: 30%;">
                             <b>NOMBRE DE LA EMPRESA - JCP</b><br>
                             <small>01/2021 - 05/2021</small>
                         </td>
-                        <td style="width: 70%; padding: 10px; vertical-align: top;">
+                        <td style="width: 70%;">
                             <strong>Desarrollador Senior</strong><br>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt saepe voluptas libero voluptates dolorem! Reprehenderit quo temporibus quasi qui doloribus, dicta porro ut quidem repellendus error alias distinctio earum. Reiciendis?.</p>
                         </td>
                     </tr>
-                    <tr style="border-bottom: 1px solid #929292;">
-                        <td style="width: 30%; padding: 10px; vertical-align: top;">
+                    <tr>
+                        <td style="width: 30%;">
                             <b>NOMBRE DE LA EMPRESA - JCP</b><br>
                             <small>01/2021 - 05/2021</small>
                         </td>
-                        <td style="width: 70%; padding: 10px; vertical-align: top;">
+                        <td style="width: 70%;">
                             <strong>Desarrollador Senior</strong><br>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laborum eum accusantium, atque porro et error temporibus ullam ipsum eius nisi voluptates nemo debitis officia corporis hic exercitationem modi nam?.</p>
                         </td>
                     </tr>
-                    <tr style="border-bottom: 1px solid #929292;">
-                        <td style="width: 30%; padding: 10px; vertical-align: top;">
+                    <tr>
+                        <td style="width: 30%;">
                             <b>NOMBRE DE LA EMPRESA - JCP</b><br>
                             <small>01/2021 - 05/2021</small>
                         </td>
-                        <td style="width: 70%; padding: 10px; vertical-align: top;">
+                        <td style="width: 70%;">
                             <strong>Desarrollador Senior</strong><br>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laborum eum accusantium, atque porro et error temporibus ullam ipsum eius nisi voluptates nemo debitis officia corporis hic exercitationem modi nam?.</p>
                         </td>
                     </tr>
-                    <tr style="border-bottom: 1px solid #929292;">
-                        <td style="width: 30%; padding: 10px; vertical-align: top;">
+                    <tr>
+                        <td style="width: 30%;">
                             <b>NOMBRE DE LA EMPRESA - JCP</b><br>
                             <small>01/2021 - 05/2021</small>
                         </td>
-                        <td style="width: 70%; padding: 10px; vertical-align: top;">
+                        <td style="width: 70%;">
                             <strong>Desarrollador Senior</strong><br>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laborum eum accusantium, atque porro et error temporibus ullam ipsum eius nisi voluptates nemo debitis officia corporis hic exercitationem modi nam?.</p>
                         </td>
                     </tr>
-                    <tr style="border-bottom: 1px solid #929292;">
-                        <td style="width: 30%; padding: 10px; vertical-align: top;">
+                    <tr>
+                        <td style="width: 30%;">
                             <b>NOMBRE DE LA EMPRESA - JCP</b><br>
                             <small>01/2021 - 05/2021</small>
                         </td>
-                        <td style="width: 70%; padding: 10px; vertical-align: top;">
+                        <td style="width: 70%;">
                             <strong>Desarrollador Senior</strong><br>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo laborum eum accusantium, atque porro et error temporibus ullam ipsum eius nisi voluptates nemo debitis officia corporis hic exercitationem modi nam?.</p>
                         </td>
                     </tr>
                 </table>
             </section>
-            <section style="padding: 20px;">
-                <h2 style="color:#ffb71a; text-align: center;">Habilidades</h2>
-                <table style="width: 100%; border-collapse: collapse;">
+            <section class="skill-section">
+                <h2>Habilidades</h2>
+                <table class="skill-table">
                     <tr>
-                        <td style="width:30%; padding: 10px; vertical-align: top;"><strong>HTML/CSS</strong></td>
-                        <td style="width:70%; padding: 10px; vertical-align: top;">
-                            <div style="background-color: #d1d1d1; border-radius: 5px; width: 100%; height: 100%; overflow: hidden; padding: 5px;" >
+                        <td style="width:30%;"><strong>HTML/CSS</strong></td>
+                        <td style="width:70%;">
+                            <div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;"><strong>HTML/CSS</strong></td>
+                        <td style="width:70%;">
+                            <div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:30%;"><strong>HTML/CSS</strong></td>
+                        <td style="width:70%;">
+                            <div>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
                             </div>
                         </td>
@@ -123,31 +130,15 @@
                     <tr>
                         <td style="width:30%; padding: 10px; vertical-align: top; margin-top: 10px;"><strong>HTML/CSS</strong></td>
                         <td style="width:70%; padding: 10px; vertical-align: top;">
-                            <div style="background-color: #d1d1d1; border-radius: 5px; width: 100%; height: 100%; overflow: hidden; padding: 5px;" >
+                            <div>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td style="width:30%; padding: 10px; vertical-align: top; margin-top: 10px;"><strong>HTML/CSS</strong></td>
-                        <td style="width:70%; padding: 10px; vertical-align: top;">
-                            <div style="background-color: #d1d1d1; border-radius: 5px; width: 100%; height: 100%; overflow: hidden; padding: 5px;" >
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width:30%; padding: 10px; vertical-align: top; margin-top: 10px;"><strong>HTML/CSS</strong></td>
-                        <td style="width:70%; padding: 10px; vertical-align: top;">
-                            <div style="background-color: #d1d1d1; border-radius: 5px; width: 100%; height: 100%; overflow: hidden; padding: 5px;" >
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width:30%; padding: 10px; vertical-align: top; margin-top: 10px;"><strong>HTML/CSS</strong></td>
-                        <td style="width:70%; padding: 10px; vertical-align: top;">
-                            <div style="background-color: #d1d1d1; border-radius: 5px; width: 100%; height: 100%; overflow: hidden; padding: 5px;" >
+                        <td style="width:70%;">
+                            <div>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At recusandae doloribus quaerat. Reprehenderit quibusdam odit sequi incidunt? Cumque neque delectus quod repudiandae magni soluta, dolorum voluptates libero fuga, eveniet nesciunt.</p>
                             </div>
                         </td>
